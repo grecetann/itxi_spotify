@@ -30,13 +30,12 @@ const location = useLocation();
               return (
                 <Album
                   key={i + ""}
-                  name={album.name}
-                  date={album.release_date}
-                  img={album.images[1].url}
-                  tracks={album.total_tracks}
-                  // @ts-ignore
+                  name={album?.name}
+                  date={album?.release_date}
+                  img={album?.images[1].url}
+                  tracks={album?.total_tracks}
                   artist={location.state.name}
-                  preview={album.external_urls.spotify}
+                  preview={album?.external_urls.spotify}
                 />
               );
             })}

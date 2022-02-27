@@ -30,11 +30,11 @@ const ArtistSearchPage = () => {
                                 return (
                                     <Artist
                                         key={index + ""}
-                                        img={artist.images[1].url}
-                                        name={artist.name}
-                                        followers={artist.followers.total}
-                                        popularity={calculateRating(artist.popularity)}
-                                        navigate={() => navigateToAlbumArtist(artist.id, artist.name)}
+                                        img={artist?.images[1].url}
+                                        name={artist?.name}
+                                        followers={artist?.followers.total}
+                                        popularity={calculateRating(artist?.popularity)}
+                                        navigate={() => navigateToAlbumArtist(artist?.id, artist?.name)}
                                     />
                                 )
                             })
