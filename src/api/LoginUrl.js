@@ -5,7 +5,7 @@ const REDIRECT_URL_AFTER_LOGIN = "http://localhost:3000/";
 const SCOPES = [
   "user-read-currently-playing",
   "user-read-playback-state",
-  "playlist-read-private",
+  "playlist-read-private"
 ];
 const SCOPES_URL_PARAM = SCOPES.join(SPACE_DELIMITER);
 
