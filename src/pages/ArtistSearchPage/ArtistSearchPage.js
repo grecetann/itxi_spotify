@@ -30,7 +30,7 @@ const ArtistSearchPage = () => {
                                 return (
                                     <Artist
                                         key={index + ""}
-                                        img={artist?.images[1].url}
+                                        img={artist?.images.length > 0 ? artist.images[0].url : ""}
                                         name={artist?.name}
                                         followers={artist?.followers.total}
                                         popularity={calculateRating(artist?.popularity)}

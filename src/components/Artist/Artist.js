@@ -6,7 +6,7 @@ const  Artist =({img, name, followers, popularity, navigate})=> {
     <div className="artist" onClick={navigate}>
       <div className="artist-border">
         <div className="artist-img">
-          <img src={img} alt="artist-img" />
+          <img src={img !== "" ? img : "https://e7.pngegg.com/pngimages/972/713/png-clipart-spotify-streaming-media-logo-music-until-you-were-gone-album-version-others-hand-logo.png"} alt="artist-img" />
         </div>
         <div className="artist-content">
           <div className="artist-title">
